@@ -16,10 +16,9 @@
 #
 
 # Based on https://github.com/gunnarmorling/1brc/blob/main/src/main/java/dev/morling/onebrc/CreateMeasurements.java
-
 import os
-import sys
 import random
+import sys
 import time
 
 
@@ -30,7 +29,7 @@ def check_args(file_args):
     try:
         if len(file_args) != 2 or int(file_args[1]) <= 0:
             raise Exception()
-    except:
+    except Exception:
         print(
             "Usage:  create_measurements.sh <positive integer number of records to create>"
         )
